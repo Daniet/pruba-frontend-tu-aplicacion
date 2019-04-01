@@ -1,0 +1,63 @@
+$hidden-size: -88px
+$show-size: 88px
+
+.collection-item.avatar
+  min-height: 0px
+
+.collection-item
+  transition: 1s
+  border-top: 1px solid #e0e0e0
+  overflow: hidden
+
+.material-icons
+  transition: 1s
+  -webkit-text-stroke: 2px #307674
+  -moz-text-stroke: 2px #307674
+  -ms-text-stroke: 2px #307674
+  -o-text-stroke: 2px #307674
+
+.contact-favorite
+  .material-icons
+    color: #307674
+
+.contact-no-favorite
+  .material-icons
+    color: #0000
+
+.show-contact-favorite
+  .contact-favorite
+    transform: translatey(0px)
+    height: $show-size
+    z-index: 0
+  .contact-no-favorite
+    border: 0px
+    line-height: 0rem
+    padding: 0px 20px 0px 72px
+    margin: 0px
+    transform: translatey($hidden-size)
+    height: 0px
+    z-index: -1
+
+.show-contact-no-favorite
+  .contact-favorite
+    transform: translatey($hidden-size)
+    height: 0px
+    z-index: -1
+    border: 0px
+    line-height: 0rem
+    padding: 0px 20px 0px 72px
+    margin: 0px
+  .contact-no-favorite
+    transform: translatey(0px)
+    height: $show-size
+    z-index: 0
+
+.space-top
+  float: left
+  width: 100%
+  height: 70px
+
+.tab-fixed
+  position: fixed
+  z-index: 100
+  width: 100%

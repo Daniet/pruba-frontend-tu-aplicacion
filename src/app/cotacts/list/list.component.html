@@ -1,0 +1,52 @@
+<div class="col s12 tab-fixed">
+  <ul class="tabs">
+    <li class="tab col s4 m4 l4">
+      <a class="active" href="#test1" (click)="selectView('all')">
+        Pros
+      </a>
+    </li>
+    <li class="tab col s4 m4 l4" (click)="selectView('no-favorite')">
+      <a href="#test2">
+        Customers
+      </a>
+    </li>
+    <li class="tab col s4 m4 l4" (click)="selectView('favorite')">
+      <a href="#test4">
+        Invites
+      </a>
+    </li>
+  </ul>
+</div>
+<div class="space-top">
+
+</div>
+<div class="container">
+  <div class="row" [ngClass]="select_view">
+    <div class="col s12 m12 l12" *ngFor="let item of card_list; let id_letter = index">
+      <span>
+        {{ item.leter }}
+      </span>
+      <ul class="collection z-depth-2">
+        <li class="collection-item avatar" [ngClass]="contact.display" *ngFor="let contact of item.contacts; let id_contact = index">
+          <img src="https://materializecss.com/images/yuna.jpg" alt="" class="circle" >
+          <span class="title truncate">
+            <a routerLink="/detail/{{ id_letter}}/{{ id_contact }}">
+              {{ contact.first }}
+            </a>
+          </span>
+          <p class="truncate">
+            {{ contact.last }}
+          </p>
+          <p class="truncate">
+            {{ contact.email }}
+          </p>
+          <a class="secondary-content">
+            <i class="material-icons" [attr.letter]="id_letter" [attr.contact]="id_contact" (click)="showContact($event)">
+              grade
+            </i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

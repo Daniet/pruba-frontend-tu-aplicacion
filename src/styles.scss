@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  background: #f5f5f7;
+}
+
+.material-icons{
+  color: #307674;
+  cursor: pointer;
+}
+
+.tabs{
+  .indicator{
+    background-color: #2bbbb7
+  }
+  .tab{
+    a{
+      color: #4f4f5f;
+      &.active{
+        color: #4f4f5f;
+        background: transparent;
+      }
+      &:hover{
+        background: transparent;
+        color: #4f4f5f;
+      }
+    }
+  }
+}
