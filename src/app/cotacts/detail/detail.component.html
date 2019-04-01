@@ -1,67 +1,69 @@
-<div class="row">
-  <div class="col s12 m12 l12">
-    <ul class="collection">
-      <li class="collection-item avatar">
-        <img src="https://materializecss.com/images/yuna.jpg" alt="" class="circle">
-        <span class="title">
-          {{ contact.first }} {{ contact.last }}
-        </span>
-        <p>
+<div class="container">
+  <div class="row">
+    <div class="col s12 m8 l6 offset-m2 offset-l3">
+      <ul class="collection">
+        <li class="collection-item avatar">
+          <img src="https://materializecss.com/images/yuna.jpg" alt="" class="circle">
+          <span class="title">
+            {{ contact.first }} {{ contact.last }}
+          </span>
+          <p>
           Drywall contractor's
-        </p>
-      </li>
-    </ul>
-    <div class="row indicators">
-      <div class="col s4 m4 l4 center-align item">
-        {{ number_contact }}
-        <span>
-          Contacts
-        </span>
-      </div>
-      <div class="col s4 m4 l4 center-align item">
-        {{number_favorities }}
-        <span>
-          Favourities
-        </span>
-      </div>
-      <div class="col s4 m4 l4 center-align item">
-        {{ number_group }}
-        <span>
-          Groups
-        </span>
-      </div>
-    </div>
-    <div class="row data">
-      <div class="col s12 m12 l12">
-        <div class="row data-item">
-          <div class="col s2 m2 l2 center-align">
-            <i class="material-icons">
-              grade
-            </i>
-          </div>
-          <div class="col s10 m10 l10 data-item-field">
-            Add to Favorities
-          </div>
+          </p>
+        </li>
+      </ul>
+      <div class="row indicators">
+        <div class="col s4 m4 l4 center-align item">
+          {{ number_contact }}
+          <span>
+            Contacts
+          </span>
         </div>
-        <div class="row data-item">
-          <div class="col s2 m2 l2 center-align">
-            <i class="material-icons">
-              call
-            </i>
-          </div>
-          <div class="col s10 m10 l10 data-item-field">
-            +380 (97) 123-45-67
-            <i class="call"></i>
-          </div>
+        <div class="col s4 m4 l4 center-align item">
+          {{number_favorities }}
+          <span>
+            Favourities
+          </span>
         </div>
-        <div class="row data-item">
-          <div class="col s2 m2 l2 center-align">
-            <i class="material-icons">
-              location_on
-            </i>
+        <div class="col s4 m4 l4 center-align item">
+          {{ number_group }}
+          <span>
+            Groups
+          </span>
+        </div>
+      </div>
+      <div class="row data">
+        <div class="col s12 m12 l12">
+          <div class="row data-item">
+            <div class="col s2 m2 l2 center-align">
+              <i class="material-icons">
+                grade
+              </i>
+            </div>
+            <div class="col s10 m10 l10 data-item-field">
+              Add to Favorities
+            </div>
           </div>
-          <div class="col s10 m10 l10 data-item-field">
-            {{ contact.address }}
+          <div class="row data-item">
+            <div class="col s2 m2 l2 center-align">
+              <i class="material-icons">
+                call
+              </i>
+            </div>
+            <div class="col s10 m10 l10 data-item-field">
+              +380 (97) 123-45-67
+              <i class="call"></i>
+            </div>
+          </div>
+          <div class="row data-item">
+            <div class="col s2 m2 l2 center-align">
+              <i class="material-icons">
+                location_on
+              </i>
+            </div>
+            <div class="col s10 m10 l10 data-item-field">
+              {{ contact.address }}
+            </div>
           </div>
         </div>
       </div>
